@@ -1,0 +1,28 @@
+<div class="container">
+  <div *ngIf="isEmpty" class="alert alert-danger" role="alert">
+    Stack Empty!
+  </div>
+  <div *ngIf="isFull" class="alert alert-danger" role="alert">
+    Stack Full!
+  </div>
+  <form class="center">
+    <div class="form-group">
+      <label>Stack Size:</label>
+      <input [(ngModel)]="stackSize" type="text" name="stackSize">
+      <button (click)="createStack()" name="createStackBtn">Create Stack</button>
+    </div>
+    <div class="form-group">
+      <label>Push Value:</label>
+      <input [(ngModel)]="pushValue" type="text" name="pushValue">
+      <button (click)="push()" name="pushBtn">Push</button>
+    </div>
+    <div class="form-group">
+      <button (click)="pop()" name="popBtn">Pop</button>
+      <label id="popped_value">Popped Value: {{popped}}</label>
+    </div>
+    <div class="form-group">
+      <button (click)="display()">Display</button>
+      <label>Top Value: {{top}}</label>
+    </div>
+  </form>
+</div>
