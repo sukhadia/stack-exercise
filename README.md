@@ -1,4 +1,4 @@
-# StackExercise3
+# StackExercise
 
 Simple stack implementation and web UI with unit testing in Angular 2.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.3.
